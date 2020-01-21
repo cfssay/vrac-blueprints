@@ -60,7 +60,7 @@ resources:
     properties:
       flavor: '${input.size}'
       image: '${input.image}'
-      count: '${input.clusterSize== "Small" ? 1 : (input.clusterSize == "Medium" ? 2 : 4)}'
+      count: 2
       cloudConfig: |
         repo_update: true
         repo_upgrade: all
