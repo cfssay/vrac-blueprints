@@ -201,8 +201,7 @@ resources:
       networks:
         - name: '${resource.Cloud_Network_1.name}'
           network: '${resource.Cloud_Network_1.id}'
-          
-    Cloud_LoadBalancer_1:
+  Cloud_LoadBalancer_1:
     type: Cloud.LoadBalancer
     metadata:
       layoutPosition:
@@ -230,4 +229,3 @@ resources:
       constraints:
         - tag: '${"env:" + to_lower(input.environment)}'
         - null
-
